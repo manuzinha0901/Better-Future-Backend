@@ -23,9 +23,10 @@ from cursos.views import CursoViewSet
 router = routers.DefaultRouter()
 router.register(r'aluno', AlunoViewSet)
 router.register(r'instituicao', InstituicaoViewSet)
-router.register(r'curso', CursosViewSet)
+router.register(r'curso', CursoViewSet)
 
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('admin/', admin.site.urls),
 ]

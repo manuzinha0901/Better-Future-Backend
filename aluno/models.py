@@ -9,6 +9,8 @@ class Aluno(models.Model):
     celular = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
     senha = models.CharField(max_length=255)
-    confirmar_senha = models.CharField(max_length=255)
+    
+
+    
 
 # Create your models here.

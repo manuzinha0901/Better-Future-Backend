@@ -5,4 +5,4 @@ from instituicao.models import Instituicao
 class InstituicaoSerializers(serializers.ModelSerializer):
     class Meta:
         model = Instituicao
-        fields = ['id','nome','responsavel','endereco', 'cep', 'numero', 'email','senha',]
+        fields = ['id','nome','responsavel','endereco', 'cep', 'numero','telefone', 'email','senha',]
